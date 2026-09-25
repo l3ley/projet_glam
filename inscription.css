@@ -1,0 +1,26 @@
+.mylabel{
+    float: left;
+    width: 150px;
+}
+
+.myinput {
+    margin-bottom: 15px;
+}
+
+input[type=submit] {
+    background-color: blue;
+    color: white;
+}
+
+input[type=reset] {
+    background-color: darkred;
+    color: white;
+}
+.primary{
+    color: white;
+    background-color: #3366ff;
+}
+
+.primary:hover{
+    background-color:#0843f5 ;
+}

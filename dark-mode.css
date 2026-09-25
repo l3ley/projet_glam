@@ -1,0 +1,30 @@
+
+[data-theme="light"] {
+	--bg-color: #ececec;
+	--text-color: #212121;
+}
+
+
+[data-theme="dark"] {
+	--bg-color: #212121;
+	--text-color: #ececec;
+}
+
+html {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+[data-theme="dark"] .btn-mode {
+    background-color: #444;
+    color: #ececec;
+}
+
+[data-theme="dark"] .card {
+	box-shadow:0 4px 8px 0 rgba(239, 190, 235, 0.299) ;
+}
+
+[data-theme="dark"] .actu {
+    background-color:#9E648D;
+    border-right: 1px solid #444;
+}

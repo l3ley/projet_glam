@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GLAM - Cours</title>
+        <link href="css/projet.css" rel="stylesheet">
+        <link href="css/cours.css" rel="stylesheet">
+        <link href="css/dark-mode.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <ul class="navbar">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="actualité.html">Actualité</a></li>
+            <li><a class="active" href="cours.html">Cours</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="info.html">Qui sommes-nous?</a></li>
+			 <li class="nav-right">
+        		<button class="btn-actu" data-theme-toggler>Changer de mode</button>
+            </li>
+        </ul>
+        
+        <ul class="actu">
+            <li><h1>Dernière actualité</h1></li>
+            <li><h3><strong>Atelier Tie-Dye ! (05/05) </strong></h3></p>
+            <li><p>Grand succès de l'atelier Tie-Dye ! Nous avions organiser un cours de tie-dye pour apprendre à transformer vos textiles usagés en pièces uniques et colorées.</p></li>
+            <li>
+                <img src="img/tieDye.jpg" alt="Atelier Tie Dye" class="img-actu">
+                <form action="actualité.html" method="get">
+                    <button type="submit" class="btn-actu">Voir l'actualité</button>
+                </form>
+            </li>
+        </ul>
+
+        <div class="contenu-principal">
+        <h1>Les Différents Cours</h1>
+
+	    <div class="tab">
+		    <button class="tablinks active" onclick="changeTab(event, 'couture')">Couture</button>
+		    <button class="tablinks" onclick="changeTab(event, 'tricotcrochet')">Tricot & Crochet</button>
+            <button class="tablinks" onclick="changeTab(event, 'customisationVetements')">Customisation vêtements</button>
+	    </div>
+
+        <div class="tab">
+            <div id="couture" class="tabcontent">
+
+			<div class="row">
+				<div class="column col-33">
+					<div class="card_cours">
+						<img class="imageCours" src="img/coutureDebutant.jpg" alt="Couture Debutant" />
+						<div class="container">
+							<h4>Niveau :</h4>
+                            <img class="stars" src="img/star.png"></br>
+                            <h4>Intervenant : Marie Dupont </h4>
+							<button class="button primary" onclick="naviguer('inscription.html')">Réserver</button>
+						</div>
+					</div>
+				</div>
+				<div class="column col-33">
+					<div class="card_cours">
+						<img class="imageCours" src="img/coutureIntermediaire.jpg" alt="Couture Intermediaire"/>
+						<div class="container">
+							<h4>Niveau :</h4>
+                            <img class="stars" src="img/star.png"><img class="stars" src="img/star.png"> </br>
+                            <h4>Intervenant : Marie Dupont</h4>
+							<button class="button primary" onclick="naviguer('inscription.html')">Réserver</button>
+						</div>
+					</div>
+				</div>
+				<div class="column col-33">
+					<div class="card_cours">
+						<img class="imageCours" src="img/coutureAvance.jpg" alt="Couture Avancée"/>
+						<div class="container">
+							<h4>Niveau :</h4>
+                            <img class="stars" src="img/star.png"><img class="stars" src="img/star.png"><img class="stars" src="img/star.png"></br>
+                            <h4>Intervenant : Marie Dupont</h4>
+							<button class="button primary" onclick="naviguer('inscription.html')">Réserver</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+            </div>
+            <div id="tricotcrochet" class="tabcontent">
+
+			<div class="row">
+				<div class="column col-33">
+					<div class="card_cours">
+						<img class="imageCours" src="img/crochetDebutant.jpg" alt="Crochet Debutant" />
+						<div class="container">
+							<h4>Niveau :</h4>
+                            <img class="stars" src="img/star.png"></br>
+                            <h4>Intervenant : Véronique Martin</h4>
+							<button class="button primary" onclick="naviguer('inscription.html')">Réserver</button>
+						</div>
+					</div>
+				</div>
+				<div class="column col-33">
+					<div class="card_cours">
+						<img class="imageCours" src="img/tricotIntermediaire.jpg" alt="Tricot Intermediaire"/>
+						<div class="container">
+							<h4>Niveau :</h4>
+                            <img class="stars" src="img/star.png"><img class="stars" src="img/star.png"> </br>
+                            <h4>Intervenant : Véronique Martin</h4>
+							<button class="button primary" onclick="naviguer('inscription.html')">Réserver</button>
+						</div>
+					</div>
+				</div>
+				<div class="column col-33">
+					<div class="card_cours">
+						<img class="imageCours" src="img/tricotAvance.jpg" alt="Tricot Avancée"/>
+						<div class="container">
+							<h4>Niveau :</h4>
+                            <img class="stars" src="img/star.png"><img class="stars" src="img/star.png"><img class="stars" src="img/star.png"></br>
+                            <h4>Intervenant : Véronique Martin</h4>
+							<button class="button primary" onclick="naviguer('inscription.html')">Réserver</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+            </div>
+
+        	<div id="customisationVetements" class="tabcontent">
+			<div class="row">
+				<div class="column col-33">
+					<div class="card_cours">
+						<img class="imageCours" src="img/broderie.jpg" alt="Broderie" />
+						<div class="container">
+							<h4>Broderie </br>Niveau :</h4>
+                            <img class="stars" src="img/star.png"><img class="stars" src="img/star.png"></br>
+                            <h4>Intervenant : Véronique Martin</h4>
+							<button class="button primary" onclick="naviguer('inscription.html')">Réserver</button>
+						</div>
+					</div>
+				</div>
+				<div class="column col-33">
+					<div class="card_cours">
+						<img class="imageCours" src="img/peinture.jpg" alt="Peinture"/>
+						<div class="container">
+							<h4>Peinture <br>Niveau :</h4>
+                            <img class="stars" src="img/star.png"></br>
+                            <h4>Intervenant : Philippe Lemaitre</h4>
+							<button class="button primary" onclick="naviguer('inscription.html')">Réserver</button>
+						</div>
+					</div>
+				</div>
+				<div class="column col-33">
+					<div class="card_cours">
+						<img class="imageCours" src="img/diy.jpg" alt="DIY"/>
+						<div class="container">
+							<h4>DIY </br>Niveau :</h4>
+                            <img class="stars" src="img/star.png"></br>
+                            <h4>Intervenant : Philippe Lemaitre</h4>
+							<button class="button primary" onclick="naviguer('inscription.html')">Réserver</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+        </div>
+
+        <script type="text/javascript" src="js/cours.js"></script>
+		<script src="js/dark-mode.js"></script>
+
+    </body>
+</html>

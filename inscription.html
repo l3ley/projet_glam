@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GLAM - Inscritpion
+        </title>
+        <link href="css/projet.css" rel="stylesheet">
+        <link  href="css/dark-mode.css" rel="stylesheet"/>
+        
+    </head>
+    <body>
+        <ul class="navbar">
+            <li><a class="active" href="accueil.html">Accueil</a></li>
+            <li><a href="actualité.html">Actualité</a></li>
+            <li><a href="cours.html">Cours</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="info.html">Qui sommes-nous?</a></li>
+            <li class="nav-right">
+                <button class="btn-actu" data-theme-toggler>Changer de mode</button>
+            </li>
+        </ul>
+        
+     <ul class="actu">
+            <li><h1>Dernière actualité</h1></li>
+            <li><h3><strong>Atelier Tie-Dye ! (05/05) </strong></h3></p>
+            <li><p>Grand succès de l'atelier Tie-Dye ! Nous avions organiser un cours de tie-dye pour apprendre à transformer vos textiles usagés en pièces uniques et colorées.</p></li>
+            <li>
+                <img src="img/tieDye.jpg" alt="Atelier Tie Dye" class="img-actu">
+                <form action="actualité.html" method="get">
+                    <button type="submit" class="btn-actu">Voir l'actualité</button>
+                </form>
+            </li>
+        </ul>  
+        <div class="contenu-principal">
+            <form action="#" onsubmit="ouvrirOkCours();return false;">
+            <label class="mylabel" for="nom">Nom : </label>
+            <input class="myinput" type="text" name="nom" value=""/> <br/>
+            <label class="mylabel" for="prenom">Prénom : </label>
+            <input class="myinput" type="text" name="prenom" value=""/> <br/>
+            <label class="mylabel" for="mail">Email : </label>
+            <input class="myinput" type="text" name="mail" value=""/> <br/>
+    
+            <label class="mylabel" for="atelier">Choisir l'atelier/cours : </label>
+                <select class="myinput" name="atelier" id="atelier">
+                <option value="atelier1">Atelier Tie-Dye</option>
+                <option value="atelier2">Cours de tricot/crochet</option>
+                <option value="atelier3">Cours de couture</option>
+                <option value="atelier4">Cours de customisation vetements</option>
+                </select>
+                <br/>
+    
+             <input class="primary" type="submit" value="Envoyer" /> <br/>
+            </form>
+        </div>
+        <div class="contenu-principal">
+            <form action="accueil.html" method="get">
+                <button type="submit" class="btn-actu">Retour à l'accueil</button>
+            </form>
+        </div>
+
+        <script src="js/dark-mode.js"></script>
+        <script src="js/projet.js"></script>
+
+    </body>
+</html>
